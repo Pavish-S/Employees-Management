@@ -145,7 +145,6 @@ async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(
     )
     return {"access_token": access_token, "token_type": "bearer", "role": user["Role"]}
 
-
 # --- API Endpoints ---
 @app.post("/employees/", status_code=201)
 def add_employee(emp: EmployeeCreate, db = Depends(get_db), current_user = Depends(require_admin)):
