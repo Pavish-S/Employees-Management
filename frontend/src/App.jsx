@@ -179,7 +179,7 @@ function App() {
               <input type="password" value={loginData.password} onChange={(e) => setLoginData({...loginData, password: e.target.value})} required placeholder="••••••••" />
             </div>
             <button type="submit" className="btn btn-primary" style={{ width: '100%', marginTop: '1.5rem', padding: '0.875rem' }}>Sign In</button>
-            <p className="login-hint">Admin: admin/admin | User: Pavish/Welcome@123</p>
+            {/* <p className="login-hint">Admin: admin/admin | User: Pavish/Welcome@123</p> */}
           </form>
         </div>
       </div>
@@ -190,7 +190,7 @@ function App() {
     <div className="app-container">
       <header style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
-          <h1>Employee Directory</h1>
+          <h1>Employee Details</h1>
           {/* <p className="subtitle">Logged in as {role}</p> */}
         </div>
         <button onClick={handleLogout} className="btn btn-secondary">Logout</button>
